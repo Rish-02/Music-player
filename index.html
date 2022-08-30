@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <div class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ARTIST</a></li>
+                <li><a href="#">GENRE</a></li>
+                <li><a href="#">PLAYLIST</a></li>
+                <li><a href="#">FAVOURITE</a></li>
+            </ul>
+        </div>
+
+        <div class="columns">
+            <div class="left-col">
+                <h1>MuSiC <br>iS <br>EmOtiON </h1>
+            </div>
+            <div class="right-col">
+                <p>Click To PLay"</p>
+                <img src="icon.png" id="icon">
+            </div>
+        </div>
+    </div>
+
+    <audio id="song">
+        <source src="Kesariya Tera Ishq Hai Piya.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        var song= document.getElementById("song");
+        var icon= document.getElementById("icon");
+
+        icon.onclick = function(){
+            if(song.paused){
+                song.play();
+                icon.src = "icon1.png";
+            }
+            else{
+                song.pause();
+                icon.src="icon.png"
+            }
+        }
+    </script>
+</body>
+</html>
