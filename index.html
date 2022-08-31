@@ -26,13 +26,13 @@
             </div>
             <div class="right-col">
                 <p>Click To PLay"</p>
-                <img src="icon.png" id="icon">
+                <img src="doc/icon.png" id="icon">
             </div>
         </div>
     </div>
 
     <audio id="song">
-        <source src="Kesariya Tera Ishq Hai Piya.mp3" type="audio/mp3">
+        <source src="doc/Kesariya Tera Ishq Hai Piya.mp3" type="audio/mp3">
     </audio>
 
     <script>
@@ -42,11 +42,11 @@
         icon.onclick = function(){
             if(song.paused){
                 song.play();
-                icon.src = "icon1.png";
+                icon.src = "doc/icon1.png";
             }
             else{
                 song.pause();
-                icon.src="icon.png"
+                icon.src="doc/icon.png"
             }
         }
     </script>
