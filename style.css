@@ -64,5 +64,29 @@
   background-color: white;
   border-radius: 50%;
   margin-left: 10px;
+  margin-left: 10px;
   cursor: pointer;
+}
+
+#next {
+  display: block;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  height: 53px;
+  width: 42px;
+  padding: 0 5px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+#next span {
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  cursor: pointer;
+}
+
+#next:hover {
+  transform: scale(1.1);
 }

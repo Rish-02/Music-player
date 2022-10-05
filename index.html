@@ -26,6 +26,7 @@
         <div class="right-col">
           <p>Click To PLay</p>
           <img src="doc/icon.png" id="icon" />
+          <div id="next"><span>Next</span></div>
         </div>
       </div>
     </div>
@@ -33,20 +34,6 @@
     <audio id="song">
       <source src="doc/Baarish Mein Tum - Neha Kakkar.mp3" type="audio/mp3" />
     </audio>
-
-    <script>
-      var song = document.getElementById('song');
-      var icon = document.getElementById('icon');
-
-      icon.onclick = function () {
-        if (song.paused) {
-          song.play();
-          icon.src = 'doc/icon1.png';
-        } else {
-          song.pause();
-          icon.src = 'doc/icon.png';
-        }
-      };
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
