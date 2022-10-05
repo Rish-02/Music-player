@@ -1,67 +1,92 @@
- *{
-    margin: 0;
-    padding: 0;
-    font-family:Arial, Helvetica, sans-serif;
- }
-
- .main{
-    position: relative;
-    width: 100%;
-    background-image: url(shell2.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-
- }
-
- .navbar{
-    float: right;
-    display: flex;
-    margin: 10px 15px;
-    align-items: center;
-    padding: 15px 0;
-
- }
- .navbar ul li{
-    text-decoration: none;
-    margin: 0 15px;
-    display: inline-block;
- }
-
-.navbar ul li a{
-    font-size: 20px;
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.columns{
-    width: 100%;
-    position: absolute;
-    top: 30%;
+.main {
+  position: relative;
+  width: 100%;
+  background-image: url(shell2.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
 }
 
-.left-col{
-    margin-left: 5%;
+.navbar {
+  float: right;
+  display: flex;
+  margin: 10px 15px;
+  align-items: center;
+  padding: 15px 0;
+}
+.navbar ul li {
+  text-decoration: none;
+  margin: 0 15px;
+  display: inline-block;
 }
 
-.left-col h1{
-   color: white; 
-   font-size: 70px;
-   line-height: 100px;
-   float: left;
+.navbar ul li a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
-.right-col{
-    float: right;
-    display: flex;
-    align-items: center;
-    margin-right: 12%;
-    margin-top: 80px;
-    color: azure;
+.columns {
+  width: 100%;
+  position: absolute;
+  top: 30%;
 }
 
-#icon{
-    width: 50px;
-    background-color: aliceblue;
+.left-col {
+  margin-left: 5%;
+}
+
+.left-col h1 {
+  color: white;
+  font-size: 70px;
+  line-height: 100px;
+  float: left;
+}
+
+.right-col {
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-right: 12%;
+  margin-top: 80px;
+  color: azure;
+}
+
+#icon {
+  width: 50px;
+  background-color: white;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#next {
+  display: block;
+  margin: 10px;
+  background-color: white;
+  color: black;
+  height: 53px;
+  width: 42px;
+  padding: 0 5px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+}
+#next span {
+  position: absolute;
+  left: 10px;
+  top: 17px;
+  cursor: pointer;
+}
+
+#next:hover {
+  transform: scale(1.1);
 }
